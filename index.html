@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="vi"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="theme-color" content="#090b14"><title>SAM // Touch Module</title><link rel="stylesheet" href="./style.css">
+</head><body>
+<div class="ambient a"></div><div class="ambient b"></div>
+<button id="launcher" class="launcher" aria-label="Mở menu">Z</button>
+<main id="panel" class="panel">
+<header id="dragbar" class="topbar"><div class="brand"><div class="brand-icon">Z</div><div><b>SAM <span>MODULE</span></b><small>TOUCH CONTROL SYSTEM</small></div></div><div class="top-actions"><i></i><span>LOCAL</span><button id="minimize">—</button><button id="close">×</button></div></header>
+<section class="hero"><div><small>CONTROL CENTER / 01</small><h1>Touch <em>Module</em></h1><p>Responsive control interface</p></div><div class="ring"><b>10</b><small>MODULES</small></div></section>
+<div class="line"></div>
+<section class="heading"><div><small>01 — INTERFACE</small><h2>Touch settings</h2></div><span class="tag">ACTIVE UI</span></section>
+<div class="card">
+<div class="row"><div><b>Menu visibility</b><small>Hiện hoặc ẩn bảng điều khiển</small></div><label class="switch"><input id="menuEnabled" type="checkbox" checked><span></span></label></div>
+<div class="range"><div><label for="opacity">Độ trong suốt</label><output id="opacityValue">96%</output></div><input id="opacity" type="range" min="45" max="100" value="96"></div>
+<div class="range"><div><label for="scale">Kích thước menu</label><output id="scaleValue">100%</output></div><input id="scale" type="range" min="80" max="120" value="100"></div>
+<div class="row"><div><b>Lưu cấu hình tự động</b><small>Ghi thiết lập trên thiết bị</small></div><span class="saved" id="savedState">READY</span></div>
+</div>
+<section class="heading aim-heading"><div><small>02 — GAME INTEGRATION</small><h2>Aim Assist</h2></div><span class="tag purple">GAME API</span></section>
+<div class="card aim-card">
+<div class="row"><div><b>Enable Aim Assist</b><small>Dành cho game do bạn phát triển</small></div><label class="switch"><input id="aimEnabled" type="checkbox"><span></span></label></div>
+<div class="range"><div><label for="fov">Vùng hỗ trợ (FOV)</label><output id="fovValue">12°</output></div><input id="fov" type="range" min="2" max="35" value="12"></div>
+<div class="range"><div><label for="smooth">Độ mượt điều chỉnh</label><output id="smoothValue">65%</output></div><input id="smooth" type="range" min="5" max="100" value="65"></div>
+<p class="notice">Aim Assist API chỉ tích hợp với gameplay của game do bạn kiểm soát.</p>
+</div>
+<div class="actions"><button id="apply" class="apply">✓ &nbsp; APPLY / ÁP DỤNG</button><button id="openGame" class="open-game">▶ &nbsp; OPEN GAME / MỞ GAME</button></div>
+<div id="gamePicker" class="picker hidden"><div class="picker-box"><button id="pickerClose" class="picker-close">×</button><small>CHỌN PHIÊN BẢN GAME</small><h3>Mở bằng</h3><button class="game-choice" data-package="com.dts.freefireth" data-scheme="freefireth">Free Fire <span>›</span></button><button class="game-choice" data-package="com.dts.freefiremax" data-scheme="freefiremax">Free Fire MAX <span>›</span></button><p id="launchStatus">Chọn ứng dụng muốn mở.</p></div></div>
+<footer><span>SAM INTERFACE <b>v1.1.0</b></span><span id="status">ALL SYSTEMS READY</span></footer>
+</main><script src="./app.js"></script></body></html>
